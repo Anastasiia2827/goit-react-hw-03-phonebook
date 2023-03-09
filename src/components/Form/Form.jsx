@@ -18,6 +18,10 @@ class Form extends Component {
   evt.preventDefault();
   this.props.formSubmit(this.state);
   this.reset();
+  };
+  
+    reset = () => {
+  this.setState({ name: '', number: '' });
 };
 
     render() {
